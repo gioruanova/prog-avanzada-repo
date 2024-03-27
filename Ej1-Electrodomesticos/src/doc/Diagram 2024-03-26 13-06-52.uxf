@@ -1,0 +1,96 @@
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><element><id>UMLClass</id><coordinates><x>1068</x><y>804</y><w>168</w><h>114</h></coordinates><panel_attributes>&lt;&lt;Televisor&gt;&gt;
+
+--
+-private int dimension;
+-private boolean esSmart;
+--
+
++public Televisor televisor(Scanner scanner)
++isEsSmart
+
++toString</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>876</x><y>804</y><w>168</w><h>114</h></coordinates><panel_attributes>&lt;&lt;Licuadora&gt;&gt;
+
+--
+-private int potencia;
+-private int cantVelocidades;
+--
+
++public Licuadora licuadora(Scanner scanner)
++toString</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>678</x><y>804</y><w>168</w><h>114</h></coordinates><panel_attributes>&lt;&lt;Lavarropas&gt;&gt;
+
+--
+-private int maxCarga;
+-private int esAutomatico;
+--
+
++public Lavarropas lavarropas(Scanner scanner)+
++esAutomatico
++noEsAutomatico
++toString</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>492</x><y>804</y><w>168</w><h>114</h></coordinates><panel_attributes>&lt;&lt;Heladera&gt;&gt;
+
+--
+-private int capacidadLitros;
+-private int esFrost;
+--
+
++public Heladera heladera(Scanner scanner)+
++toString</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>672</y><w>354</w><h>144</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>570;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>672</y><w>168</w><h>144</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>260;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>756</x><y>672</y><w>78</w><h>144</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;220;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>672</y><w>258</w><h>144</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;220;410;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>756</x><y>552</y><w>132</w><h>126</h></coordinates><panel_attributes>/Electrodomesticos/
+--
+    -private String marca;
+   - private String modelo;
+   - private String numeroSerie;
+   - private int voltaje;
+   - private boolean encendido;
+   - private double precio;
+--
+
++getters &amp; setters
++toString
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>756</x><y>390</y><w>144</w><h>114</h></coordinates><panel_attributes>CasaElectrodomestico
+
+--
+
+    -private List&lt;Electrodomestico&gt; productos;
+    -private List&lt;Ticket&gt; Tickets;
+
+--
+
++mostrarProductos
++totalProductos
++accionarTicket
++accionarTicketParcial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>606</x><y>396</y><w>108</w><h>102</h></coordinates><panel_attributes>Cliente
+
+--
+
+   - private String apenom;
+   - private int cuil;
+
+--
+
++toString</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>906</x><y>474</y><w>168</w><h>138</h></coordinates><panel_attributes>Ticket
+
+--
+
+    -private int nroTicket;
+    -private Cliente cliente;
+    -private List&lt;Electrodomestico&gt; productos;
+
+--
+
++generarNumeroAleatorio
++agregarProductos
++totalTicket
+
++imprimir
++imprimirParcial
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>708</x><y>426</y><w>60</w><h>18</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>894</x><y>438</y><w>60</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;60;80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>816</x><y>498</y><w>18</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1134</x><y>474</y><w>108</w><h>102</h></coordinates><panel_attributes>Imprimible
+
+--
+
+    void imprimir();
+    void imprimirParcial();</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1068</x><y>516</y><w>78</w><h>24</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;implements&gt;&gt;</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element></diagram>
