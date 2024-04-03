@@ -16,6 +16,7 @@ public class Heladera extends Electrodomestico {
         this.capacidadLitros = capacidadLitros;
         this.esFrost = false;
     }
+    
 
     public Heladera capturaDatos(Scanner scanner) {
         String esFrostInput = "";

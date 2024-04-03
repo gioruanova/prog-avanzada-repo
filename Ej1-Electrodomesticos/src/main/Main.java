@@ -60,6 +60,7 @@ public class Main {
 
         casa1.accionarTicket(ticket1);
         System.out.println("-----------------");
+        System.out.println("-----------------");
         casa1.accionarTicketParcial(ticket1);
 
     }
