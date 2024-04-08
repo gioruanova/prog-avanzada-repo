@@ -114,10 +114,10 @@ public class Ejercicio {
                 // 10. Crear una lista de Strings con todos los titulos de los cursos.
                 System.out.println(
                                 "10. Crear una lista de Strings con todos los titulos de los cursos.");
-                String listadoCursosString = cursos.stream()
+                cursos.stream()
                                 .map(Curso::getTitulo)
-                                .collect(Collectors.joining("\n"));
-                System.out.println(listadoCursosString);
+                                .collect(Collectors.toList())
+                                .forEach(System.out::println);
                 System.out.println("\n");
         }
 
